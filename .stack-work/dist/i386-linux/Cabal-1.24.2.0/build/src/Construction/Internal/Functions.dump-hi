@@ -1,0 +1,264 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-04 10:03:48.935069 UTC
+
+interface construct-yourself-0.1.0.0-JABwtlicEIdJDIZVdPab5M:Construction.Internal.Functions [orphan module] 8002
+  interface hash: f7b09564369f9f420460f6af3d653683
+  ABI hash: e77bc3915a17aa7ebef7788564a93a15
+  export-list hash: a843efd84c2b80ac18a7eb70105cb0ba
+  orphan hash: 06ef7fa24ea98e2fd2004aa7bbf39864
+  flag hash: 804dc7c5a006c3c4b3f8a9eae6f4a4b3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Construction.Internal.Functions.alpha
+  Construction.Internal.Functions.beta
+  Construction.Internal.Functions.bound
+  Construction.Internal.Functions.eta
+  Construction.Internal.Functions.free
+  Construction.Internal.Functions.fresh
+  Construction.Internal.Functions.reduce
+  Construction.Internal.Functions.substitute
+  Construction.Internal.Functions.Context
+module dependencies: Construction.Internal.Types
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00*
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+import  -/  base-4.9.1.0:GHC.Base 7c6dca1da85771cbd20bed24c1d3546b
+import  -/  base-4.9.1.0:GHC.List e83b7af0a5a7198ae5f639ee7353eeb2
+import  -/  base-4.9.1.0:GHC.Show e44c8020a8022c9a818d8c773c427dd9
+import  -/  base-4.9.1.0:Prelude 4d7ee35012f77eace89fe02e109def8f
+import  -/  Construction.Internal.Types c3e26bb8b88b683172bdaca28e66b115
+  exports: 2a192e01b31701fbd08c7f4d91d97074
+  App 895beeeadde5a53ade8629a8c29181eb
+  Lam 3ed2547040f0fb603d7eb406a81f2f37
+  Name 5b39e143eef67aa935d7c91135f90e91
+  Term 82e38325512b0d9983b3f7d3fa532635
+  Var 1c0327913dc57285aef97084901558e6
+  algo 863395aee8b314668cd2fc84ad59b07e
+  arg 94712e038721715a1cbfdfcc6e29eb65
+  body a1f98d4a076771e5d08e29995b3780d9
+  var 975d73528b3218b2bf1bb3094a5c37b5
+  variable 1773185283a07b136cab886ae533a997
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set 3ed2324fd1e757464a8ac2b636a64e5a
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base 5e6a95c27a15780b9d255a553a546c3f
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 3876ddae268b9e4fd3619d1fe120f418
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text e105f5a6b47d676879564e86b510fdbd
+03db97716bb140bb5006bb17c76d8076
+  $fEqTerm :: GHC.Classes.Eq Construction.Internal.Types.Term
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Construction.Internal.Types.Term
+                  Construction.Internal.Functions.$fEqTerm_$c==
+                  Construction.Internal.Functions.$fEqTerm_$c/= -}
+a444f8657eae3a163f0222a385abeca8
+  $fEqTerm_$c/= ::
+    Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Term -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U><L,U>, Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Construction.Internal.Types.Term)
+                   (y :: Construction.Internal.Types.Term) ->
+                 GHC.Classes.not
+                   (Construction.Internal.Functions.$fEqTerm_$c== x y)) -}
+985335203022a216c9022f886eddaab6
+  $fEqTerm_$c== ::
+    Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Term -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+420621f9aec5607a381a22edcb8f8c85
+  $smember_go5 ::
+    Construction.Internal.Types.Name
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U,U,U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Construction.Internal.Types.Name)
+                   (w1 :: Data.Set.Base.Set Construction.Internal.Types.Name) ->
+                 case w of ww { Data.Text.Internal.Text ww1 ww2 ww3 ->
+                 Construction.Internal.Functions.$wgo5 ww1 ww2 ww3 w1 }) -}
+9fb1815128f847989404f816885fe607
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Construction.Internal.Functions.$trModule2
+                   Construction.Internal.Functions.$trModule1) -}
+5d7123c34c80d4eab4bfda0cd5ecc7a7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Construction.Internal.Functions"#) -}
+99718a35b7c7ee6726b9a7eb1673850b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "construct-yourself-0.1.0.0-JABwtlicEIdJDIZVdPab5M"#) -}
+e0ba213af10353e03e502a9eeec1d623
+  $w$sgo1 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+341c2c818f047ca28be488b62f36792a
+  $w$sgo5 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,1*U>, Inline: [0] -}
+9eff44230c8f578faed33b694ea248c5
+  $wgo ::
+    GHC.Prim.Int#
+    -> (# Data.Text.Internal.Text, [Data.Text.Internal.Text] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+8d6cc8a96f8955682bf6145ae3e6d554
+  $wgo5 ::
+    GHC.Prim.ByteArray#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+b5ec555f3ce9d9cecf8f13edd0e4479e
+  type Context = Data.Set.Base.Set Construction.Internal.Types.Name
+fd4f8e0b0854c42ce662a0847ac9ec15
+  alpha ::
+    Construction.Internal.Types.Term
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+    -> Construction.Internal.Types.Term
+  {- Arity: 2, Strictness: <S,1*U><L,U> -}
+6a3f78bdc47fed55bd835a839f2f3766
+  beta ::
+    Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Term
+  {- Arity: 1, Strictness: <S,1*U> -}
+83e90ed7bc1de97f140721745ac0807c
+  bound ::
+    Construction.Internal.Types.Term
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+  {- Arity: 1, Strictness: <S,1*U> -}
+3fa7bbb42e2bf9620300977b4a1665ea
+  eta ::
+    Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Term
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (lam :: Construction.Internal.Types.Term) ->
+                 case lam of wild {
+                   DEFAULT -> wild
+                   Construction.Internal.Types.Lam var1 ds
+                   -> case ds of wild1 {
+                        DEFAULT -> wild
+                        Construction.Internal.Types.App algo ds1
+                        -> case ds1 of wild2 {
+                             DEFAULT -> wild
+                             Construction.Internal.Types.Var var2
+                             -> case var1 of wild3 { Data.Text.Internal.Text dt dt1 dt2 ->
+                                case var2 of wild4 { Data.Text.Internal.Text dt3 dt4 dt5 ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# dt2 dt5) of wild5 {
+                                  GHC.Types.False -> wild
+                                  GHC.Types.True
+                                  -> case {__pkg_ccall text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00 _hs_text_memcmp GHC.Prim.ByteArray#
+                                                                                                                        -> GHC.Prim.Word#
+                                                                                                                        -> GHC.Prim.ByteArray#
+                                                                                                                        -> GHC.Prim.Word#
+                                                                                                                        -> GHC.Prim.Word#
+                                                                                                                        -> GHC.Prim.State#
+                                                                                                                             GHC.Prim.RealWorld
+                                                                                                                        -> (# GHC.Prim.State#
+                                                                                                                                GHC.Prim.RealWorld,
+                                                                                                                              GHC.Prim.Int# #)}
+                                            dt
+                                            (GHC.Prim.int2Word# dt1)
+                                            dt3
+                                            (GHC.Prim.int2Word# dt4)
+                                            (GHC.Prim.int2Word# dt2)
+                                            GHC.Prim.realWorld# of wild6 { (#,#) ds11 ds12 ->
+                                     case ds12 of wild7 {
+                                       DEFAULT -> wild
+                                       0#
+                                       -> case Construction.Internal.Functions.$wgo5
+                                                 dt
+                                                 dt1
+                                                 dt2
+                                                 (Construction.Internal.Functions.free
+                                                    algo) of wild8 {
+                                            GHC.Types.False -> algo
+                                            GHC.Types.True -> wild } } } } } } } } }) -}
+4bcab69040b1295f2db8761136872c0a
+  free ::
+    Construction.Internal.Types.Term
+    -> Data.Set.Base.Set Construction.Internal.Types.Name
+  {- Arity: 1, Strictness: <S,1*U> -}
+40f8e6d110882038cfe1742145ba01b5
+  fresh ::
+    Data.Set.Base.Set Construction.Internal.Types.Name
+    -> Construction.Internal.Types.Name
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (conflicts :: Data.Set.Base.Set
+                                   Construction.Internal.Types.Name) ->
+                 case GHC.List.dropWhile
+                        @ Construction.Internal.Types.Name
+                        (\ (ds :: Construction.Internal.Types.Name) ->
+                         Construction.Internal.Functions.$smember_go5 ds conflicts)
+                        Construction.Internal.Functions.fresh1 of wild {
+                   [] -> GHC.List.badHead @ Construction.Internal.Types.Name
+                   : x ds1 -> x }) -}
+590d72573db48390593a1fce6dc59080
+  fresh1 :: [Data.Text.Internal.Text]
+  {- Unfolding: (case Construction.Internal.Functions.$wgo
+                        0# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ Data.Text.Internal.Text ww1 ww2 }) -}
+7196d345535fd05190999fcb64a1f2c8
+  reduce ::
+    Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Term
+  {- Arity: 1, Strictness: <S,U> -}
+13c75ada1e9b4ed93c352f128b40f7f6
+  substitute ::
+    Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Name
+    -> Construction.Internal.Types.Term
+    -> Construction.Internal.Types.Term
+  {- Arity: 3, Strictness: <S,1*U><L,U(U,U,U)><L,U> -}
+instance [safe] GHC.Classes.Eq [Construction.Internal.Types.Term]
+  = Construction.Internal.Functions.$fEqTerm
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

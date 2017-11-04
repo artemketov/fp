@@ -72,6 +72,16 @@ eta lam@(Lam var1 (App algo (Var var2))) | var1 == var2 && var1 `notMember` (fre
                                          | otherwise = lam
 eta t = t
 
+instance Eq Term where
+
+  (==) (Var v) (Var b) | v == b = True
+                       | otherwise = False
+  (==) (App a a') (App b b') = (a == b) && (a' == b')
+  (==) (Lam var1 var2) (Lam var3 var4) = (substitute var2 var1 freshVariable) == (substitute var4 var3 freshVariable) where freshVariable = Var $ fresh (free var2 `union` free var4)
+  (==) a b = False
+                                              
+                                               
+
 -- | reduce term
 reduce :: Term -> Term
 reduce term = let term' = beta term

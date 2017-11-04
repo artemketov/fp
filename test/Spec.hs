@@ -17,15 +17,24 @@ main = hspec $ do
     describe "Beta test" testBeta
     describe "Eta test" testEta
     describe "Reduce test" testReduce
+    describe "Eq test" testEq
 
-varX, varX0, varX1, varX2 :: Term
+kComb :: Term
+kComb = Lam "x" $ Lam "x1" (Var "x")
+
+kStarComb :: Term
+kStarComb = Lam "x" $ Lam "x1" (Var "x1")
+
+varX, varY, varX0, varX1, varX2 :: Term
 varX = Var "x"
+varY = Var "y"
 varX0 = Var "x0"
 varX1 = Var "x1"
 varX2 = Var "x2"
 
-lamId, lamK, lamKK :: Term
+lamId, lamIdy, lamK, lamKK :: Term
 lamId = Lam "x" varX -- \x.x
+lamIdy = Lam "y" varY
 lamK  = Lam "x" $ Lam "x1" varX -- \x x1.x == \x.(\x1.x)
 lamKK = Lam "x" $ Lam "x1" varX1 -- \x x1.x1 == \x.(\x1.x1)
 
@@ -117,4 +126,8 @@ testReduce = do
     it "#4" $ reduce (App lamK varX) `shouldBe` Lam "x1" varX
     it "#5" $ reduce (App (App lamK varX) varX2) `shouldBe` varX
     it "#6" $ reduce (Lam "x0" (App (App (App lamK varX) varX2) varX0)) `shouldBe` varX
-      
+     
+testEq :: SpecWith ()
+testEq = do
+    it "#1" $ lamId == lamIdy `shouldBe` True
+    it "#2" $ reduce (App kComb lamId) == kStarComb `shouldBe` True
